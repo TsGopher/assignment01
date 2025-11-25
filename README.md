@@ -36,7 +36,7 @@ type Employee = User & {
 
    `type`: & (ইন্টারসেকশন) ব্যবহার করে
 
-2. #### ডিক্লারেশন মর্জন
+2. #### ডিক্লারেশন মার্জিং
 
    `interface`: একই নামে multiple interface লিখলে তারা auto merge হয়ে যায়
 
@@ -66,7 +66,7 @@ Union types, complex types এর জন্য → `type`
 let id: string | number; // স্ট্রিং বা নাম্বার গ্রহণ করতে পারে
 id = "ABC123"; // ভ্যালিড
 id = 123; // ভ্যালিড
-id = true; // এরর - বুলিয়ান অনুমোদিত না
+id = true; // এরর - বুলিয়ান এক্সেপ্ট করবে না
 
 // ফাংশন প্যারামিটারেও ব্যবহার
 function printId(id: string | number) {
